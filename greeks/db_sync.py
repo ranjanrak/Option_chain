@@ -6,7 +6,7 @@ import requests
 class Syncing():
     """ This function should be called only on expiry day, it will sync data base with next month contract """
     def option_chain(token):
-        kite = KiteConnect(api_key="blwekjvno83ep8vo")
+        kite = KiteConnect(api_key="XXXXXXXXXXX")
         kite.set_access_token(token["access_token"])
         response=kite.instruments()
         number=1

@@ -21,10 +21,10 @@ class work(View):
         x = request.GET.get('status', '')
         if x == "success":
             token = request.GET.get('request_token','None')
-            kite = KiteConnect(api_key="blwekjvno83ep8vo")
+            kite = KiteConnect(api_key="XXXXXXXXX")
             
             try:
-                user = kite.request_access_token(request_token=token,secret="0hivw5gapvrv5y5stye56mm2w2pvktvr")
+                user = kite.request_access_token(request_token=token,secret="XXXXXXXXXXX")
                 kite.set_access_token(user["access_token"])
                 #Using django session to store login user info
                 #session date will be moved to other views as per requirement 
